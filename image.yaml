@@ -24,6 +24,10 @@ services:
         condition: service_healthy
       mail:
         condition: service_healthy
+
+    #Healthcheck removed for the community version of Plausible.
+    #Healthcheck for community version is unstable on Coolify because the "http://127.0.0.1:8000/api/health" ENDPOINT is not working for community edition.
+        
     # healthcheck:
     #   test:
     #     [
